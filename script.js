@@ -19,7 +19,7 @@ const second = 1000,
   day = hour * 24;
 
 // **สำคัญ:** เปลี่ยนวันที่นี้เป็นวันเกิดที่ถูกต้อง (เดือน วัน ปี) เช่น 'Dec 31, 2025 00:00:00'
-let countDown = new Date('nov 11, 2025 00:00:00').getTime(),
+let countDown = new Date('10 11, 2025 00:00:00').getTime(),
   x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
@@ -489,4 +489,5 @@ function confetti() {
   });
 
   if (!onlyOnKonami) poof();
+
 };
